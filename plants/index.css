@@ -1,0 +1,76 @@
+body {
+    width: 1440px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.header {
+    height: 134px;
+    background: #EDF2EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+    .header .container_logo_nav {
+        width: 1220px;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .header .container_logo_nav .logo_plants {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        width: 70%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        color: #010201;
+        width: 30%;
+    }
+
+    nav .nav-elem {
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: inherit;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    #home{
+        color:#E06733;
+    }
+
+
+
+footer {
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: inherit;
+    align-items: flex-end;}
+
+
+    .footer .container_footer{
+        height: 50px;
+        width: 1222px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: inherit;
+        align-items: center;
+    }
