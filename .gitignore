@@ -102,12 +102,4 @@ dist
 
 # TernJS port file
 .tern-port
-/.idea/.name
-/.idea/checkstyle-idea.xml
-/.idea/git_toolbox_prj.xml
-/.idea/jpa-buddy.xml
-/.idea/karbarbar-JSFEPRESCHOOL2022Q4.iml
-/.idea/misc.xml
-/.idea/modules.xml
-/.idea/vcs.xml
-/.idea/workspace.xml
+.idea
