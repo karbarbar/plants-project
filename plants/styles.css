@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Inika';
+    src: url('https://fonts.googleapis.com/css2?family=Inika:wght@700&display=swap');
+    font-weight: 700;}
+@font-face {
+    font-family: 'Inika';
+    src: url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+    font-weight: 400;}
+@font-face {
+    font-family: 'Inter';
+    src: url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    font-weight: 400;}
+@font-face {
+    font-family: 'Inter';
+    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+    font-weight: 700;}
 
 body {
     max-width: 1440px;
@@ -54,8 +70,10 @@ body {
     a {
         text-decoration: none;
         color: #010201;
+        font-family: "Inika", Verdana, sans-serif;
+        font-style: normal;
+        font-weight: 400;
         font-size: 16px;
-
     }
     #home{
             color:#E06733;
@@ -84,10 +102,16 @@ body {
         height: 340px;
     }
     h1{
+        font-family: 'Inter', Verdana, sans-serif;
+        font-style: normal;
+        font-weight: 700;
         font-size: 45px;
         color: #717171;
     }
 p{
+    font-family: 'Inter', Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 20px;
     color: #636060;
 }
@@ -98,6 +122,15 @@ button{
     border: 2px solid #E06733;
     border-radius: 10px;
     font-size: 16px;
+    width: 160px;
+    height: 50px;
+    margin-right: 38px;
+    color: #E06733;
+    }
+#learn_more{
+    height: 44px;
+    color:#000000;
+
 }
 .about{
      height: 666px;
@@ -127,12 +160,93 @@ button{
        width: 38%;
     }
     h2{
+        font-family: 'Inika', Verdana, sans-serif;
+        font-style: normal;
+        font-weight: 400;
         font-size: 40px;
         color: #499A18;
+        padding-right: 11%;
+    }
+    h3{
+        font-family: 'Inter', Verdana, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #636060;
+    }
+    h4{
+        font-family: 'Inter', Verdana, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        color: #E06733;
+        text-align: center;
+        margin: 10px;
+    }
+    .garden_care p {
+        font-family: 'Inter', Verdana, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #717171;
     }
     #about{
         color: #E06733;
     }
+    .service{
+        height: 1300px;
+        background: #EDF2EC;
+        display: flex;
+        flex-direction: column;
+    }
+.service .container_service{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service .container_service .service_text{
+    height: 10%;
+    width: 85%;
+    padding-bottom: 7%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+    .service .container_service .service_photo{
+        box-sizing: content-box;
+        width: 85%;
+        height: 74%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+.service .container_service .service_text .button{
+    width: 50%;
+    height: 39%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.service .container_service .service_photo .garden_care{
+    border: 1px solid #E3E1D5;
+    border-radius: 0 0 20px 20px;
+    box-sizing: border-box;
+    height: 47%;
+
+}
+.garden_care img{
+
+    border-radius: 20px 20px 0 0;
+}
 footer {
     height: 130px;
     display: flex;
