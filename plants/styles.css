@@ -58,15 +58,21 @@ body {
         width: 30%;
     }
 
-    nav .nav-elem {
+    ul {
         min-width: 100%;
         display: flex;
         align-items: center;
         justify-content: inherit;
         list-style: none;
         padding-left: 0;
+            }
+     li .active{
+        color:#E06733;
+     }
+        li:not (.active):hover{
+        cursor: pointer;
+         color:#E06733;
     }
-
     a {
         text-decoration: none;
         color: #010201;
@@ -76,8 +82,8 @@ body {
         font-size: 16px;
     }
     #home{
-            color:#E06733;
-        }
+        color:#E06733;}
+
  .welcome{
      height: 532px;
      background-color: #EDF2EC;
@@ -127,6 +133,11 @@ button{
     margin-right: 38px;
     color: #E06733;
     }
+
+button.selected {
+    background-color:#E06733;
+    color: white;
+}
 #learn_more{
     height: 44px;
     color:#000000;
@@ -184,7 +195,7 @@ button{
         text-align: center;
         margin: 10px;
     }
-    .garden_care p {
+    .service_care p {
         font-family: 'Inter', Verdana, sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -236,14 +247,14 @@ button{
     justify-content: space-around;
     align-items: center;
 }
-.service .container_service .service_photo .garden_care{
+.service .container_service .service_photo .service_care{
     border: 1px solid #E3E1D5;
     border-radius: 0 0 20px 20px;
     box-sizing: border-box;
     height: 47%;
 
 }
-.garden_care img{
+.service_care img{
 
     border-radius: 20px 20px 0 0;
 }

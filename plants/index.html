@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<script src="index.js"></script>
 <html lang="en">
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +20,7 @@
       </div>
       <nav>
         <ul class="nav-elem">
-          <li><a href="#home_section" id="home">Home</a></li>
+          <li class="active"><a href="#home_section" id="home">Home</a></li>
           <li><a href="#About_section" >About us</a></li>
           <li><a href="#service_section" >Service</a></li>
           <li><a href="#prices_section" >Price</a></li>
@@ -53,38 +54,44 @@
         <div class="service_text">
           <h2>Service and our <br>projects</h2>
           <div class="button">
-            <div class="garden"><button>Garden</button></div>
-            <div class="lawn"><button>Lawn</button></div>
-            <div class="planting"><button>Planting</button></div>
+            <div class="garden">
+              <button id="gardenButton" onclick="onClickGardenCare()">Garden</button>
+            </div>
+            <div class="lawn">
+              <button id="lawnButton" onclick="onClickLawnCare()">Lawn</button>
+            </div>
+            <div class="planting">
+              <button id="plantingButton" onclick="onClickPlanting()">Planting</button>
+            </div>
           </div>
         </div>
         <div class="service_photo">
-          <div class="garden_care">
-            <img src="assets/img/first1.jpg" alt="photo">
+          <div class="service_care" id="garden_1">
+            <img id="todoTextField" src="assets/img/first1.jpg" alt="photo">
             <h4>Garden care</h4>
             <p>Lorem Ipsum has been the industry</p>
           </div>
-          <div class="garden_care">
+          <div class="service_care" id="plantingCare">
             <img src="assets/img/first2.jpg" alt="photo">
             <h4>Planting</h4>
             <p>Lorem Ipsum has been the industry</p>
           </div>
-          <div class="garden_care">
+          <div class="service_care" id="lawnCare">
             <img src="assets/img/first3.jpg" alt="photo">
             <h4>Lawn care</h4>
             <p>Lorem Ipsum has been the industry</p>
           </div>
-          <div class="garden_care">
+          <div class="service_care" id="plantingCareTwo">
             <img src="assets/img/first4.jpg" alt="photo">
             <h4>Planting</h4>
             <p>Lorem Ipsum has been the industry</p>
           </div>
-          <div class="garden_care">
+          <div class="service_care" id="garden_2">
             <img src="assets/img/first5.jpg" alt="photo">
             <h4>Garden care</h4>
             <p>Lorem Ipsum has been the industry</p>
           </div>
-          <div class="garden_care">
+          <div class="service_care" id="plantingCareThree">
             <img src="assets/img/first6.jpg" alt="photo">
             <h4>Planting</h4>
             <p>Lorem Ipsum has been the industry</p>
