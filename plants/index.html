@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<script src="index.js"></script>
 <html lang="en">
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +19,7 @@
       </div>
       <nav>
         <ul class="nav-elem">
-          <li class="active"><a href="#home_section" id="home">Home</a></li>
+          <li><a href="#home_section" id="home">Home</a></li>
           <li><a href="#About_section" >About us</a></li>
           <li><a href="#service_section" >Service</a></li>
           <li><a href="#prices_section" >Price</a></li>
@@ -99,13 +98,34 @@
         </div>
       </div>
     </section>
-    <section class="prices" id="prices_section">
-      <div class="container_prices">
-        <div class="table_prices"></div>
-        <div class="text_prices">
-          <h2>Our best <span>gardeners</span> are ready to help you</h2>
-          <button>Contact us</button>
-          <img src="assets/img/leafsleafs2.jpg" alt="mini_leafs">
+    <section id="prices_section">
+      <div id="container_prices">
+        <div id="table_prices">
+          <h5 class="text-prices">Price</h5>
+          <button class="accordion">Basics</button>
+          <div class="panel">
+              <hr>
+              <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+              $15/ per hour</p>
+<!--              <button class="visibility-button">Order</button>-->           <button class="visibility-button">Order</button>
+          </div>
+          <button class="accordion">Standard</button>
+          <div class="panel">
+              <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+              <br><p><span>$25</span>/ per hour</p>
+              <button class="visibility-button">Order</button>
+          </div>
+          <button class="accordion">Pro Care</button>
+          <div class="panel">
+              <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+              <br><p><span>$35</span>/ per hour</p>
+              <button class="visibility-button">Order</button>
+          </div>
+          </div>
+    <div class="text_prices_two">
+          <h5>Our best <span>gardeners</span> are <br>ready to help you</h5>
+          <button id="button_contact">Contact us</button>
+          <div><img src="assets/img/leafsleafs2.jpg" alt="mini_leafs"></div>
         </div>
       </div>
     </section>
@@ -131,7 +151,6 @@
 
 
   </footer>
-
-
 </body>
 </html>
+<script src="index.js"></script>

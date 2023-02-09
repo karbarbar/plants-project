@@ -65,14 +65,8 @@ body {
         justify-content: inherit;
         list-style: none;
         padding-left: 0;
-            }
-     li .active{
-        color:#E06733;
-     }
-        li:not (.active):hover{
-        cursor: pointer;
-         color:#E06733;
     }
+
     a {
         text-decoration: none;
         color: #010201;
@@ -121,6 +115,7 @@ p{
     font-size: 20px;
     color: #636060;
 }
+
 span{
     color: #499A18;
 }
@@ -133,6 +128,10 @@ button{
     margin-right: 38px;
     color: #E06733;
     }
+
+#button_contact{
+    background-color: #FFFFFF;
+}
 
 button.selected {
     background-color:#E06733;
@@ -195,6 +194,17 @@ button.selected {
         text-align: center;
         margin: 10px;
     }
+    h5{
+        font-family: 'Inter', Verdana, sans-serif;;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #000000;
+        margin: 0;
+    }
+
+
     .service_care p {
         font-family: 'Inter', Verdana, sans-serif;
         font-style: normal;
@@ -263,7 +273,8 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: inherit;
-    align-items: flex-end;}
+    align-items: flex-end;
+    background-color: #717171;}
 
 
     .footer .container_footer{
@@ -275,3 +286,117 @@ footer {
         justify-content: inherit;
         align-items: center;
     }
+ #prices_section{
+     height: 560px;
+     background-color: #FFFFFF;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+    #container_prices {
+        margin: 0;
+        height: 72%;
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #table_prices{
+        height: 97%;
+        width: 27%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .accordion {
+      font-family: 'Inter', Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      color: #000000;
+      background-color: #EDF2EC;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+}
+
+.active, .accordion:hover {
+      background-color:  #D6E7D2;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+
+}
+
+.accordion:after {
+  content: url("assets/img/accordion_btn_down.svg");
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+
+}
+
+.active:after {
+  content: url("assets/img/accordion_btn_up.svg");
+}
+
+.panel {
+    font-family: 'Inter', Verdana, sans-serif;
+    font-style: normal;
+    background-color:   #D6E7D2;
+    margin-top: -13%;
+    width: 100%;
+    max-height: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.panel p {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    color: #717171;
+
+}
+.panel span{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #E06733;
+}
+.panel br{
+   font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+}
+.panel .visibility-button{
+    width: 86px;
+    height: 25px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #717171;
+    border: none;
+
+}
+hr{
+    border: 0.5px solid #AEA1A1;
+    width: 164px;
+}
+.prices .container_prices .text_prices_two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    }
+
