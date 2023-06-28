@@ -399,4 +399,31 @@ hr{
     justify-content: space-between;
     align-items: flex-end;
     }
+.footer {
+  background-color: gray;
+  flex: 0 0 auto;
+  border-top: 1px solid #ebebeb;
+  width: 100%;
+}
+
+.footer_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.footer_year {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 10px 20px 10px 20px;
+  padding-top: 20px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin: 10px 20px 10px 20px;
+}
 
